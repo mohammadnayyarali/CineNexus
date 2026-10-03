@@ -1,0 +1,9 @@
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      ARTIFACT_PATH: /app/data/artifacts/recommender.joblib
+    volumes:
+      - ./data:/app/data:ro

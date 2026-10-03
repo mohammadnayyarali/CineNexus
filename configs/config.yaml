@@ -1,0 +1,16 @@
+dataset_path: data/raw/netflix_titles.csv
+artifact_path: data/artifacts/recommender.joblib
+content_features:
+  - type
+  - listed_in
+  - director
+  - cast
+  - country
+  - rating
+  - description
+tfidf:
+  stop_words: english
+  ngram_range: [1, 2]
+  min_df: 1
+  max_df: 1.0
+max_top_n: 50
